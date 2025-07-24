@@ -9,7 +9,8 @@
     "test": "ng test",
     "build:prod": "ng build --configuration production && npm run copy:public",
     "copy:public": "cpy dist/portfolio/browser/** public",
-    "build:vercel": "ng build --configuration production && xcopy /E /I /Y dist\\portfolio\\browser\\ public\\"
+    "build:vercel": "ng build --configuration production && cp -r dist/portfolio/browser/* public/"
+
   },
   "private": true,
   "dependencies": {
