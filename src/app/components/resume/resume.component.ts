@@ -40,13 +40,13 @@ export class ResumeComponent implements AfterViewInit {
       role: 'Java/Python Developer',
       company: 'Admas IT Place ',
       duration: '2019 - 2024',
-      description: 'Contributed in building and Deploying secured and Maintainable  Backend Systems.'
+      description: 'Contributed in building and Deploying secured and Complex Backend Systems.'
     },
     {
       role: 'Full Stack Engineer',
       company: 'Freelance/Private IT Contractor',
       duration: '2019- Till Date',
-      description: 'Contributed in building and Deploying secured, Responsive  and Maintainable Full Stack Systems.'
+      description: 'Contributed in building and Deploying secured, Complex  and Maintainable Full Stack Systems.'
     }
   ];
 
