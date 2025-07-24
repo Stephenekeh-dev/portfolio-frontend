@@ -3,9 +3,9 @@
   position: relative;
   background: rgba(0, 0, 0, 0.3); /* dim effect */
   overflow: hidden;
-  min-height: 40vh;
+  max-height: 45vh;
   
-  padding: 10px;
+  padding: 0px;
   
 }
 
