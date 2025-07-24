@@ -1,0 +1,138 @@
+.projects-section {
+  padding: 0.7rem;
+  text-align: center;
+}
+
+.projects-section h2 {
+  font-size: 1.2rem;
+  color: #0a5b57;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* Grid Layout */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 0.5rem;
+  background-color: #fff;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Project Card Animation */
+.project-card {
+  background-color:#f9f9f9;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: opacity, transform;
+  transition-delay: var(--delay, 0s); /* Allow dynamic delay via CSS variable */
+}
+
+.project-card.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Card Image */
+.project-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* Card Text */
+mat-card-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #094848;
+  margin: 0.5rem 0;
+}
+
+mat-card-content p {
+  font-size: 0.8rem;
+  color: #333;
+  line-height: 1.2;
+}
+
+/* Actions */
+mat-card-actions {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.5rem 0 1rem 0;
+}
+
+mat-card-actions a {
+  font-size: 0.95rem;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .projects-section {
+    padding: 0.5rem;
+  }
+
+  .projects-section h2 {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  mat-card-title {
+    font-size: 1.2rem;
+  }
+
+  mat-card-content p {
+    font-size: 0.95rem;
+  }
+
+  mat-card-actions a {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .projects-section {
+    padding: 0.5rem 0.5rem;
+  }
+
+  .projects-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+    padding: 0.3rem;
+  }
+
+  .project-card {
+    margin: 0 auto;
+  }
+
+  mat-card-title {
+    font-size: 1.05rem;
+  }
+
+  mat-card-content p {
+    font-size: 0.9rem;
+  }
+
+  mat-card-actions {
+    justify-content: center;
+  }
+
+  mat-card-actions a {
+    font-size: 0.85rem;
+  }
+}

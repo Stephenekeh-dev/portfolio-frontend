@@ -1,0 +1,28 @@
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+  padding-bottom:10px;
+}
+
+.social-links a img {
+  width: 32px;
+  height: 32px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover img {
+  transform: scale(1.2);
+}
+.social-links a {
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+
+}
+
+.social-links a:hover {
+  color: #007bff;
+  transform: scale(1.2);
+}

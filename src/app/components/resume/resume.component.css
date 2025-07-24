@@ -1,0 +1,122 @@
+.resume-section {
+  padding: 0.2rem;
+  text-align: center;
+}
+
+
+/* Two-column layout for Education and Experience */
+.section-block {
+  display: inline-block;
+  width: 48%;
+  vertical-align: top;
+  background-color:#fff;
+  margin: 1%;
+  box-sizing: border-box;
+}
+
+/* Headings inside section blocks */
+.section-block h3 {
+  margin-bottom: 0.2rem;
+  color: #0a5b57;
+  font-size: 1.5rem;
+}
+
+/* Resume cards */
+.resume-card {
+  margin: 0 auto 1rem;
+  max-width: 100%;
+  text-align: center;
+  background-color:#f9f9f9;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+.resume-card.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+mat-card-title {
+  font-size: 1.3rem;
+}
+
+mat-card-subtitle {
+  font-size: 1rem;
+}
+
+mat-card-content p {
+  font-size: 0.95rem;
+}
+
+/* Download Button */
+.download-btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  background-color: f9f9f9;
+  text-decoration: none;
+  border:none;
+}
+
+mat-icon {
+  vertical-align: middle;
+  margin-right: 3px;
+}
+
+/* Responsive layout */
+@media (max-width: 900px) {
+  .section-block {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .resume-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .section-block h3 {
+    font-size: 1.5rem;
+  }
+
+  mat-card-title {
+    font-size: 1.1rem;
+  }
+
+  mat-card-subtitle {
+    font-size: 0.95rem;
+  }
+
+  mat-card-content p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .resume-section {
+    padding: 0.3rem;
+  }
+
+  .resume-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .section-block h3 {
+    font-size: 1.3rem;
+  }
+
+  mat-card-title {
+    font-size: 1rem;
+  }
+
+  mat-card-subtitle {
+    font-size: 0.9rem;
+  }
+
+  mat-card-content p {
+    font-size: 0.85rem;
+  }
+
+  .resume-card {
+    max-width: 90%;
+  }
+}

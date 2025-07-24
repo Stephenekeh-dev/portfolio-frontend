@@ -1,0 +1,28 @@
+<section class="resume-section">
+ 
+
+  <div class="section-row">
+    <div class="section-block">
+      <h3>Education</h3>
+      <mat-card class="resume-card" *ngFor="let edu of education">
+        <mat-card-title>{{ edu.degree }}</mat-card-title>
+        <mat-card-subtitle>{{ edu.institution }}</mat-card-subtitle>
+        <mat-card-content>
+          <p>{{ edu.year }}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class="section-block">
+      <h3>Experience</h3>
+      <mat-card class="resume-card" *ngFor="let exp of experience">
+        <mat-card-title>{{ exp.role }}</mat-card-title>
+        <mat-card-subtitle>{{ exp.company }}</mat-card-subtitle>
+        <mat-card-content>
+          <p>{{ exp.duration }}</p>
+          <p>{{ exp.description }}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</section>

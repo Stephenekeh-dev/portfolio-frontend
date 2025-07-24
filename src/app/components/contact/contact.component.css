@@ -1,0 +1,92 @@
+.contact-section {
+  padding: 0.8rem 0.4rem;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 1.5rem;
+  color: #0a5b57;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.full-width {
+  width: 100%;
+}
+
+mat-form-field {
+  font-size: 1rem;
+}
+
+mat-label {
+  font-size: 1rem;
+}
+
+input, textarea {
+  font-size: 1rem;
+}
+
+button {
+  align-self: center;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+}
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 1rem 0.5rem;
+  }
+
+  .contact-section h2 {
+    font-size: 1.2rem;
+  }
+
+  mat-form-field {
+    font-size: 0.95rem;
+  }
+
+  mat-label {
+    font-size: 0.95rem;
+  }
+
+  input, textarea {
+    font-size: 0.95rem;
+    background-color: fff;
+  }
+
+  button {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section h2 {
+    font-size: 1.4rem;
+  }
+
+  mat-form-field {
+    font-size: 0.9rem;
+  }
+
+  mat-label {
+    font-size: 0.9rem;
+  }
+
+  input, textarea {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
