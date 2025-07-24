@@ -7,11 +7,11 @@ import {ProjectsComponent}  from './components/projects/projects.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { SocialMediaLinksComponent } from './components/social-media-links/social-media-links.component';
+
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [HeaderComponent, AboutComponent,SkillsComponent, ProjectsComponent,ResumeComponent, ContactComponent, SocialMediaLinksComponent, FooterComponent], // This is fine
+  imports: [HeaderComponent, AboutComponent,SkillsComponent, ProjectsComponent,ResumeComponent, ContactComponent, FooterComponent], // This is fine
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
