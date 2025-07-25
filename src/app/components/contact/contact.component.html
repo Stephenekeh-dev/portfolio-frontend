@@ -1,4 +1,4 @@
-<section class="contact-section  mat-elevation-z4" >
+<section class="contact-section mat-elevation-z4">
   <h2>Contact Me</h2>
 
   <form (ngSubmit)="submitForm()" #contactForm="ngForm" class="contact-form">
@@ -17,7 +17,16 @@
       <textarea matInput rows="5" required name="message" [(ngModel)]="contact.message"></textarea>
     </mat-form-field>
 
-    <button mat-raised-button color="accent" type="submit">Send Message</button>
+    <button mat-raised-button color="accent" type="submit" [disabled]="loading">
+      <ng-container *ngIf="!loading; else loadingTemplate">Send Message</ng-container>
+      <ng-template #loadingTemplate>
+        <mat-progress-spinner
+          diameter="20"
+          mode="indeterminate"
+          color="primary"
+          class="spinner"
+        ></mat-progress-spinner>
+      </ng-template>
+    </button>
   </form>
 </section>
-

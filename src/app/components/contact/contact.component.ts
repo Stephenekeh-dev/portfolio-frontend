@@ -6,8 +6,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { NgIf } from '@angular/common';
 import { AfterViewInit, ElementRef, ViewChild, Renderer2 } from '@angular/core';
-
-
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'; // Added
 
 @Component({
   selector: 'app-contact',
@@ -16,8 +15,8 @@ import { AfterViewInit, ElementRef, ViewChild, Renderer2 } from '@angular/core';
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
+    MatProgressSpinnerModule, // Added
     NgIf,
-   
   ],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
@@ -28,19 +27,30 @@ export class ContactComponent {
     email: '',
     message: ''
   };
+
+  loading = false; // Added
+
   constructor(private http: HttpClient) { }
 
- submitForm() {
-  this.http.post('https://portfolio-u4jc.onrender.com/api/contact/', this.contact).subscribe({
-    next: () =>  {
-      alert('Message sent successfully!');
-      this.contact = {
-        name: '',
-        email: '',
-        message: ''
-      };
+  submitForm() {
+    if (this.loading) return; // Prevent double submit
+
+    this.loading = true;
+
+    this.http.post('https://portfolio-u4jc.onrender.com/api/contact/', this.contact).subscribe({
+      next: () => {
+        alert('Message sent successfully!');
+        this.contact = {
+          name: '',
+          email: '',
+          message: ''
+        };
+        this.loading = false;
       },
-    error: () => alert('Error sending message.')
-  });
-}
+      error: () => {
+        alert('Error sending message.');
+        this.loading = false;
+      }
+    });
+  }
 }

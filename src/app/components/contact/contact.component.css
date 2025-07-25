@@ -39,6 +39,13 @@ button {
   font-size: 1rem;
   padding: 0.75rem 1.5rem;
 }
+.spinner {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 
 /* Responsive Enhancements */
 @media (max-width: 768px) {
