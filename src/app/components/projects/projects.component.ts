@@ -31,7 +31,7 @@ export class ProjectsComponent implements AfterViewInit {
       title: 'User Authen. with JWT Spring Security',
       image: 'assets/screenshot6.png',
       
-      github: 'https://github.com/Stephenekeh-dev/respons-ecommerce-dashboar',
+      github: 'https://github.com/Stephenekeh-dev/user-auth-spring-security',
       demo: 'https://frontend-ashen-gamma-56.vercel.app'
     }
     
