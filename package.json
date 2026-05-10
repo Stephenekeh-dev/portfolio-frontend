@@ -10,7 +10,6 @@
     "build:prod": "ng build --configuration production && npm run copy:public",
     "copy:public": "cpy dist/portfolio/browser/** public",
     "build:vercel": "ng build --configuration production && cp -r dist/portfolio/browser/* public/"
-
   },
   "private": true,
   "dependencies": {
@@ -24,6 +23,7 @@
     "@angular/platform-browser": "^19.0.0",
     "@angular/platform-browser-dynamic": "^19.0.0",
     "@angular/router": "^19.0.0",
+    "@vercel/analytics": "^2.0.1",
     "ngx-scrollreveal": "^3.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
