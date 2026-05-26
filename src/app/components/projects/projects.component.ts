@@ -21,14 +21,14 @@ export class ProjectsComponent implements AfterViewInit {
     },
    
     {
-      title: 'Login monitoring & Admin Alert System',
+      title: 'SaaS project Management System',
       image: 'assets/login-monit.png',
      
-      github: 'https://github.com/Stephenekeh-dev/login-monit-alert-system',
-      demo: 'https://login-moni-alert-front.vercel.app'
+      github: 'https://github.com/Stephenekeh-dev/saas-project-management-backend',
+      demo: 'http://saasapp-env.eba-i334tgjp.us-east-1.elasticbeanstalk.com/swagger-ui/index.html'
     },
      {
-      title: 'User Authen. with JWT Spring Security',
+      title: 'MFA User Authen. with JWT Spring Security',
       image: 'assets/screenshot6.png',
       
       github: 'https://github.com/Stephenekeh-dev/secure-auth',
